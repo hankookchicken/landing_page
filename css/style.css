@@ -158,10 +158,56 @@ a {
     width: 400px;
 }
 
-.menu img {
+.menu .photos img {
     display: block;
     margin: 10px auto;
-    width: 600px;
+    margin-top: 50px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+.menu-title h1 {
+    font-size: 48px;
+    background-color: #ddd;
+    font-weight: bold;
+    text-align: center;
+}
+
+.menu .menu-heading {
+    margin-top: 60px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.menu .menu-heading h1 {
+    font-size: 36px;
+}
+
+.menu .menu-heading p {
+    font-size: 24px;
+}
+
+.menu .item {
+    background-color: #333;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    color: #fff;
+    width: 400px;
+}
+
+.menu .item .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.menu .menu-section {
+    justify-content: space-evenly;
+}
+
+.menu .menu-section2 {
+    justify-content: space-around;
+    margin: 0 200px;
 }
 
 .footer {
@@ -190,7 +236,6 @@ a {
         padding: 20px;
     }
 
-    /* with the above, it looks good, but on even smaller phones, it may not fit, lets lessen the padding */
     .navbar a {
         padding: 10px 10px;
         margin: 0 3px;
@@ -205,6 +250,11 @@ a {
     }
     .menu img {
         width: 300px;
+    }
+
+    .menu .menu-section2 {
+        justify-content: space-evenly;
+        margin: 0;
     }
 
 }
