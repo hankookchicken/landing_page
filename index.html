@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6ba9019a6f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hankook Chicken</title>
+</head>
+<body>
+    <header id="home" class="hero">
+        <nav id="navbar" class="navbar">
+            <h1 class="logo">Hankook Chicken</h1>
+            <div class="links">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="index.html#menu">Menu</a></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/"><i class="fab fa-instagram fa-2x"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+        
+
+        <div class="content">
+            <!-- <h1>The best korean fried & bbq chicken</h1> -->
+            <h1>THE BEST KOREAN FRIED & BBQ CHICKEN</h1>
+            <div class="links">
+                <a href="index.html#contact" class="btn">ORDER PICKUP</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.skipthedishes.com/hankook-chicken" class="btn">ORDER DELIVERY (SkipTheDishes)</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.ubereats.com/ca/store/hankook-chicken-korean-fried-%26bbq/bdLlgDqnQLSDyMUGb8U5YQ/?utm_source=google&utm_medium=organic&utm_campaign=place-action-link" class="btn">ORDER DELIVERY (UberEats)</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="about container flex-item">
+            <div class="photos">
+                <img src="../images/chicken_1.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1>About Us</h1>
+                <p>Looking for a hearty meal? Look no further!</p>
+                <p>Tao’s Pizza & Steakhouse offers a variety of gourmet pizzas, baked lasagna, spaghetti, tortellini with homemade white sauce, meat sauce, and pizza sauce. With a variety of main courses like veal, chicken, and steak, there is something for everyone!
+                </p>
+                <p>Order from Tao’s Pizza & Steakhouse, in Calgary, for pickup or delivery, through SkipTheDishes.com!</p>
+            </div>
+        </section>
+
+        <section class="transition">
+            <div class="photo"></div>
+        </section>
+
+        <section id="contact" class="contact container flex-item">
+            <div class="content">
+                <p class="address">923 6 Ave SW</p>
+                <p class="phone">(403) 453 - 0852</p>
+                <p class="pickup">Call us to order pickup!</p>
+                <a href="https://www.skipthedishes.com/hankook-chicken" class="btn btn-light">ORDER DELIVERY (SkipTheDishes)</a>
+                <a href="https://www.ubereats.com/ca/store/hankook-chicken-korean-fried-%26bbq/bdLlgDqnQLSDyMUGb8U5YQ/?utm_source=google&utm_medium=organic&utm_campaign=place-action-link" class="btn btn-light">ORDER DELIVERY (UberEats)</a>
+            </div>
+            <div class="photos">
+                <img src="../images/store.jpg" alt="">
+            </div>
+        </section>
+
+        <section class="transition2">
+            <div class="photo"></div>
+        </section>
+
+        <section id="menu" class="menu">
+            <div class="photos">
+                <img src="../images/menu.jpg" alt="">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer bg-dark">
+        <div class="social">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/"><i class="fab fa-instagram fa-2x"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        const navbar = document.getElementById('navbar');
+
+        // smooth scrolling
+        $('#navbar a, .btn').on('click', function(e) {
+            if (this.hash !== '') {
+                e.preventDefault();
+
+                const hash = this.hash;
+
+                $('html, body').animate(
+                    {
+                        scrollTop: $(hash).offset().top - 100,
+                    },
+                    800
+                )
+            }
+        });
+    </script>
+</body>
+</html>

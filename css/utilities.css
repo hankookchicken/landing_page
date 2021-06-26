@@ -1,0 +1,33 @@
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 30px;
+    color: #fff;
+    background-color: #555;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #222;
+}
+
+.btn-light {
+    background-color: #ddd;
+    color: #555;
+}
+
+.btn-light:hover {
+    background-color: #ccc;
+}
+
+.container {
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+.flex-item {
+    display: flex;
+}
